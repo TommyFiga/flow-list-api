@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "incremental": true,
+      "target": "ES2020",
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true,
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "forceConsistentCasingInFileNames": true,
+      "allowUnreachableCode": false,
+      "noUnusedLocals": false,
+      "noUnusedParameters": false,
+      "paths": {
+        "@api/*": ["./src/api/*"],
+        "@config/*": ["./src/config/*"],
+        "@models/*": ["./src/models/*"]
+      }
+    },
+    "include": ["src/**/*"]
+}
+  
