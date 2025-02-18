@@ -17,7 +17,9 @@ model Task {
   id            String  @default(uuid())  @id
   title         String
   description   String?
-  startDate     String
+  startDate     String?
   dueDate       String?
-  isCompleted   Boolean @default(false)
+  status        String @default("incomplete")
+  priority      String?
+  creationDate  String
 }
