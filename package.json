@@ -1,10 +1,12 @@
 {
   "name": "flow-list-api",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "start": "node dist/src/server.js",
-    "seed": "ts-node prisma/seed.ts"
+    "start": "node dist/server.js",
+    "nodemon": "nodemon",
+    "seed": "ts-node prisma/seed.ts",
+    "build": "tsc && tsc-alias",
+    "watch": "tsc -w"
   },
   "author": "",
   "license": "ISC",
@@ -12,10 +14,13 @@
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.1",
+    "nodemon": "^3.1.9",
     "prisma": "^6.3.1",
     "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
     "tsc-watch": "^6.2.1",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "zod": "^3.24.2"
   },
   "dependencies": {
     "@prisma/client": "^6.3.1",
